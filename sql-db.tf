@@ -3,6 +3,10 @@ provider "azurerm" {
   features {}
 }
 
+terraform {
+    backend "azurerm" {}
+}
+
 resource "azurerm_resource_group" "example" {
   name     = "aks-rg"
   location = "East US"
