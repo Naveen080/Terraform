@@ -8,7 +8,7 @@ terraform {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "aks-rg"
+  name     = "aks-test"
   location = "East US"
 }
 
