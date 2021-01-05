@@ -4,7 +4,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "AKS-Test"
+  name     = "aks-rg"
   location = "East US"
 }
 
