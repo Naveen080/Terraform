@@ -35,7 +35,9 @@ resource "azurerm_mssql_database" "test" {
   collation      = "SQL_Latin1_General_CP1_CI_AS"
   license_type   = "LicenseIncluded"
   max_size_gb    = 250
-  read_scale     = true
+  dtu                 = 50
+  db_dtu_min          = 0
+  db_dtu_max          = 5
   sku_name       = "S1"
   zone_redundant = false
 
