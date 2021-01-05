@@ -36,7 +36,7 @@ resource "azurerm_mssql_database" "test" {
   license_type   = "LicenseIncluded"
   max_size_gb    = 250
   read_scale     = true
-  sku_name       = "Standard"
+  sku_name       = "S1"
   zone_redundant = false
 
   extended_auditing_policy {
